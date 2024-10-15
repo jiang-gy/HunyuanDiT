@@ -5,4 +5,4 @@ params=" \
             --rope-img base512 \
             --rope-real \
             "
-deepspeed hydit/train_deepspeed.py ${params}  "$@"
+deepspeed   --include localhost:0,7,10 hydit/train_deepspeed.py ${params}  "$@"

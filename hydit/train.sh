@@ -28,7 +28,7 @@ sh $(dirname "$0")/run_g.sh \
     --global-seed 999 \
     --grad-accu-steps ${grad_accu_steps} \
     --warmup-num-steps ${warmup_num_steps} \
-    --use-flash-attn \
+    # --use-flash-attn \
     --use-fp16 \
     --extra-fp16 \
     --results-dir ${results_dir} \
